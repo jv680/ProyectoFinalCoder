@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-¡¡¡¡¡¡¡¡¡ ABOOOOOOOOOOOOOOOOOOOOUT !!!!!!!!
+{% extends "padre.html" %}
+{% load static %}
 
-</body>
-</html>
+{% block contenidoQueCambia %}
+    
+<textarea name="" id="" cols="100" rows="40" disabled>
+
+
+Blog Creado por: José Rojas -- Profesión: Ingeniero de Telecomunicaciones 
+
+Soy venezolano residente en Argentina desde hace 5 años, en el barrio de Palermo.
+
+Actuamente me desempeño cómo SRE en el área de IT en empresa multinacional. En el team en donde
+me encuentro actualmente es muy común el uso de Python, lo que me empujó a realizar el curso en CoderHouse,
+curso que me ha ayudadado muchísimo a entender mejor los procesos en el puesto en el cual me encuentro.
+
+Anteriormente había estado trabajando con redes de telecomunicaciones y el área de software y las metodologías ágiles
+son relativamente nuevas para mí.
+
+La idea de este blog en desarrollo es presentar cómo proyecto final para Coder House cómo un espacio para que cada usuario
+pueda hacer publicaiones de recetas y compartirlas con el resto de los usuarios.
+
+</textarea>
+
+
+{% endblock %}

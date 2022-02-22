@@ -59,15 +59,15 @@
 					  				<span class="caret"></span>
 						  			<ul class="media-list">
 								  		<li class="media">
-										    <img class="pull-left" src="{% static '/Foodblog/images/product-item.jpg/' %}" alt="">
+										    <img class="pull-left" src="{% static '/Foodblog/images/user/' %}" alt="">
 										    <div class="media-body">
-										      	<h6>Italian Sauce
-								    				<span>$250</span>
+										      	<h6>Usuario:
+								    				<span>"User"</span>
 								    			</h6>
 								    		</div>
 								  		</li>
 									</ul>
-									<button class="btn btn-primary btn-sm">Checkout</button>
+									<button class="btn btn-primary btn-sm">Logout</button>
 							    </div>
 							</div>
 						</li>
@@ -188,7 +188,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<a href="{% url 'about' %}">
-						<img src="{% static '/Foodblog/images/logo.png/' %}" alt="logo">
+						<img src="{% static '/Foodblog/images/logo2.png/' %}" alt="logo">
 					</a>
 				</div>	<!-- End of /.col-md-12 -->
 			</div>	<!-- End of /.row -->
@@ -237,6 +237,8 @@
 		</div>	<!-- /.container-fluid -->
 	</nav>	<!-- End of /.nav -->
 
+
+      {% block contenidoQueCambia %}
 
 	<!-- SLIDER Start
     ================================================== -->
@@ -347,98 +349,98 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div>	<!-- End of /.col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-2.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div> <!-- End Of Col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-3.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div> <!-- End Of /.Col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-4.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div> <!-- End Of /.Col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-5.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div> <!-- End Of /.Col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-6.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div> <!-- End Of /.Col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-7.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
-						<a class="view-link shutter" href="#">
+						<a class="view-link shutter" href="{% url 'building' %}">
 							<i class=""></i>Ver Receta</a>
 					</div>	<!-- End of /.products -->
 				</div> <!-- End Of /.Col-md-3 -->
 				<div class="col-md-3">
 					<div class="products">
-						<a href="">
+						<a href="{% url 'building' %}">
 							<img src="{% static '/Foodblog/images/product-image-8.jpg/' %}" alt="">
 						</a>
-						<a href="">
+						<a href="{% url 'building' %}">
 							<h4>Amazing Italian Sauces</h4>
 						</a>
 						<div >
-							<a class="view-link shutter" href="#">
+							<a class="view-link shutter" href="{% url 'building' %}">
 								<i class=""></i>Ver Receta</a>
 						</div>
 					</div>	<!-- End of /.products -->
@@ -477,7 +479,7 @@
 		</div> <!-- End Of /.Container -->
 	</section>	<!-- End of Section -->
 	
-	
+	{% endblock %}
 
 	<!-- FOOTER Start
     ================================================== -->
@@ -488,7 +490,7 @@
 				<div class="col-md-4">
 					<div class="block clearfix">
 						<a href="#">
-							<img src="{% static '/Foodblog/images/footer-logo.png/' %}" alt="">
+							<img src="{% static '/Foodblog/images/footer-logo2.png/' %}" alt="">
 						</a>
 						<p>
 							Blog dedicado a la publicaipon de recetas, para proyecto final, curso de Python para CoderHouse
@@ -509,6 +511,7 @@
 				</div> <!-- End Of Col-md-3 -->
 			</div> <!-- End Of /.row -->
 		</div> <!-- End Of /.Container -->
+
 		
 
 

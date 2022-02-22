@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
 
@@ -6,29 +6,26 @@ from django.contrib.auth import login, logout, authenticate
 def login_request(request):
     
     if request.method == "POST":
-        form = AuthenticationForm(request, data = request.POST)
+        form = AuthenticationForm(request, request.POST)
         
         if form.is_valid():
-            user = form.cleaned_data.get('usuario')
-            passw = form.cleaned_data.get('contraseña')
+            user = form.cleaned_data['username']
+            passw = form.cleaned_data['password']
+            usern = authenticate(username=user, password=passw)
             
-            user = authenticate(usuario=user, contraseña=passw)
-            
-            if user is not None:
-                login(request, user)
-                
-                return render(request, "index.html", {"mensaje": f"Bienvenido {user}"})
-            
+            if usern is not None:
+                login(request, usern)
+                return redirect('home')
             else:
+                return render(request, "loging.html", 
+                    {'form': form,
+                     'error': 'No es válido el usuario o la contraseña'})
             
-                return render(request, "index.html", {"mensaje": "Error, datos incorrectos"})
-        
         else:
+            return render(request, 'login.html', {"form": form})
         
-            return render(request, "index.html", {"mensaje": "Error, formulario erroneo"})
-    
-    form = AuthenticationForm()
-
-    return render(request, "login.html", {"form": form})
+    else:
+        form = AuthenticationForm()
+        return render(request, 'login.html', {'form': form})
 
 

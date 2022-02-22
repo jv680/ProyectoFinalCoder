@@ -47,14 +47,14 @@
 							<a data-toggle="modal" data-target="" href="{% url 'formulario' %}">
 							<i class=""></i>
 								Sign
-							<a data-toggle="modal" data-target="" href="#">
+							<a data-toggle="modal" data-target="" href="{% url 'login' %}">
 							<i class=""></i>
 								Login
 							</a>
 						</li>
 						<li>
 							<div class="cart dropdown">
-						  		<a data-toggle="dropdown" href="#"><i class=""></i>Logout</a>
+						  		<a data-toggle="modal" href="{% url 'logout' %}"><i class=""></i>Logout</a>
 					  			<div class="dropdown-menu dropup">
 					  				<span class="caret"></span>
 						  			<ul class="media-list">

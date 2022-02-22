@@ -7,4 +7,4 @@ class Recetas(models.Model):
     preparación = (models.CharField(max_length=2000))
     
     def __str__(self) -> str:
-        return f"Nombre: {self.Nombre}"
+        return f"Nombre: {self.Nombre} Ingredientes: {self.ingredientes} Preparación: {self.preparación}"      

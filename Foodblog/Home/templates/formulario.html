@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% if datosusuario.errors %}
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    {% if form.errors %}
 
     <p style="color:red;">Están mal los datos, revisar</p>
 
@@ -17,7 +14,7 @@
 
         <table>
             
-            {{ datosusuario.as_table }}
+            {{ form.as_table }}
 
             
         </table> 
@@ -25,5 +22,7 @@
         <input type="submit", value="Crear cuenta">
 
     </form>
-</body>
-</html>
+
+    
+
+    {% endblock %}

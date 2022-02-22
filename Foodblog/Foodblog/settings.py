@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Messages',
     'Profiles',
     'Home',
+    'Blogs',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'Foodblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [''],
+        'DIRS': ['Foodblog/static/Foodblog/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

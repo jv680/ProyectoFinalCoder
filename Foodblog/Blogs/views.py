@@ -2,7 +2,10 @@ from django.forms import model_to_dict
 from django.shortcuts import redirect, render
 from Blogs.forms import AgregarReceta
 from Blogs.models import Recetas
+from django.contrib.auth.decorators import login_required
 
+
+@login_required
 def blog(request):
     
     recetas = Recetas.objects.all()
@@ -11,7 +14,7 @@ def blog(request):
     
     return render(request, "blog.html", contexto)
 
-
+@login_required
 def addreceta(request):
     
     if request.method == 'POST':
@@ -36,7 +39,7 @@ def addreceta(request):
     
     return render(request, "blogadd.html", {"nuevareceta":nuevareceta})
 
-
+@login_required
 def deletereceta(request, id_receta):
     
     receta = Recetas.objects.get(id=id_receta)
@@ -44,7 +47,7 @@ def deletereceta(request, id_receta):
     
     return redirect('blog')
 
-
+@login_required
 def updateRecetas(request, id_receta):
     
     receta = Recetas.objects.get(id=id_receta)

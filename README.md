@@ -19,7 +19,7 @@ Además también debería poder contar con un botón de Login, Signup y Logout p
 
 ****NOTA****
 
-  El proyecto inicial para la pre-entrega contaba con otro template que no me parecía adecuado para realizar un blog, por ese motivo decidí empezar desde cero, desición que me tomó muchísimo tiempo y por la que no pude realizar todo lo que tenía en mente. A la fecha se entrega sólo lo que se pudo ir realizando sobre la marcha, falta mucha estética al proyecto y muchos features por añadir que estaban ya pensados.
+  El proyecto inicial para la pre-entrega contaba con otro template que no me parecía adecuado para realizar un blog, por ese motivo decidí empezar desde cero, decisión que me tomó muchísimo tiempo y por la que no pude realizar todo lo que tenía en mente. A la fecha se entrega sólo lo que se pudo ir realizando sobre la marcha, falta mucha estética al proyecto y muchos features por añadir que estaban ya pensados.
 
   De igual forma no quise dejar de entregar el proyecto ya que me ha tomado batante tiempo.
 
